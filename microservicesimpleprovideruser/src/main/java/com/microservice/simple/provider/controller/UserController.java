@@ -24,7 +24,7 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/consumer/{id}")
     public User findById(@PathVariable Long id) {
         Optional<User> user = this.userRepository.findById(id);
         return user.orElse(null);

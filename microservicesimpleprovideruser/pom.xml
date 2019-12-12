@@ -51,7 +51,14 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
-<!--        H2 数据库开启支持-->
+        <!--		开启监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+
+        <!--        H2 数据库开启支持-->
 <!--        <dependency>-->
 <!--            <groupId>com.h2database</groupId>-->
 <!--            <artifactId>h2</artifactId>-->

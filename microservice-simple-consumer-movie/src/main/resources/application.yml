@@ -1,6 +1,5 @@
 server:
   port: 80
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,3 +12,11 @@ spring:
     generate-ddl: false
     hibernate:
       ddl-auto: none
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: '/actuator'
+      exposure:
+        include: "*"

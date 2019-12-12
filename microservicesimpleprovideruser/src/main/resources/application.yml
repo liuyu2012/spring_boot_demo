@@ -13,4 +13,11 @@ spring:
     password: root
 
 #logging:
-#  level: info
+#  level: info.
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: "/actuator"
+      exposure:
+        include: "*"
